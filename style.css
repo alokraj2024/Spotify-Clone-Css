@@ -140,20 +140,21 @@ a{
 }
 
 .sticky-nav{
-    position: static;
+    position: sticky;
     top: 0;
     background-color: #121212;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 1rem 0;
+    z-index: 10;
 }
 
 .sticky-nav-icons {
     margin-left: 0.75rem;
 }
 
-.sticky-nav-options{
+.sticky-nav-option{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,10 +175,13 @@ a{
     width: 150px;
     border-radius: 0.5rem;
     padding: 1rem;
+    margin: 1rem;
+    margin-top: 1rem;
 }
 
 .card-container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card-img{
@@ -192,4 +196,18 @@ a{
 .card-info{
     font-size: 0.85rem;
     opacity: 0.8;
+}
+
+.footer{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
 }
